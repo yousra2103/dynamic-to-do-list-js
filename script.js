@@ -16,8 +16,9 @@ function addTask(){
 
        // Create a new button element for removing the task
        const removeBtn = document.createElement('button');
+       removeBtn.classList.add('remove-btn');
        removeBtn.textContent = 'Remove';
-       removeBtn.className = 'remove-btn';
+       ul.appendChild(li);
 
        // Assign an onclick event to the remove button to remove the <li> element
        removeBtn.onclick = function() {
