@@ -26,11 +26,11 @@ function addTask(){
        }
     
     // Add an event listener to the Add Task button
-    const addTaskBtn = document.getElementById('addTaskBtn');
-    addTaskBtn.addEventListener('click', addTask);
+    
+    addButton.addEventListener('click', addTask);
 
     // Add an event listener to the task input for the 'keypress' event
-    const taskInput = document.getElementById('taskInput');
+    
     taskInput.addEventListener('keypress', function(event) {
       if (event.key === 'Enter') {
         addTask();
