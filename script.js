@@ -6,7 +6,7 @@ const taskList = document.getElementById('task-list');
 
 
 function addTask(){
-    var taskText = taskInput.ariaValueMax.trim().retrieve();
+    var taskText = taskInput.value.trim().retrieve();
     if (taskText == ""){ alert("enter a task")
         ;} else {
     
